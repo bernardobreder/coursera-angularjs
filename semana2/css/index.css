@@ -32,9 +32,8 @@ body {
     box-sizing: border-box;
     float: right;
     border: 1px solid black;
-    position: relative;
-    right: -1px;
-    top: -1px;
+    border-right: 0px;
+    border-top: 0px;
     width: 150px;
     padding: 5px 10px 5px 10px;
     text-align: center;
