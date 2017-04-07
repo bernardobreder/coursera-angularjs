@@ -23,7 +23,6 @@ body {
 }
 
 .box {
-    position: relative;
     border: 1px solid black;
     background-color: #cccccc;
     margin: 10px;
@@ -31,12 +30,13 @@ body {
 
 .box-title {
     box-sizing: border-box;
+    float: right;
     border: 1px solid black;
-    position: absolute;
-    right: -1px;
-    top: -1px;
+    border-right: 0px;
+    border-top: 0px;
     width: 150px;
     padding: 5px 10px 5px 10px;
+    text-align: center;
     font-weight: bold;
     font-size: 1.75em;
 }
@@ -47,27 +47,16 @@ body {
 }
 
 .color1 {
-    background-color: #ff0000;
+    background-color: #55ff55;
 }
 
 .color2 {
-    background-color: #00ff00;
+    background-color: #ff5555;
+    color: #ffffff;
 }
 
 .color3 {
-    background-color: #0000ff;
-}
-
-@media (max-width: 767px) {
-    .col-sm-1 {
-        width: 100%;
-    }
-    .col-sm-2 {
-        width: 100%;
-    }
-    .col-sm-3 {
-        width: 100%;
-    }
+    background-color: #5555ff;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -77,9 +66,6 @@ body {
     .col-md-2 {
         width: 50%;
     }
-    .col-md-3 {
-        width: 100%;
-    }
 }
 
 @media (min-width: 992px) {
@@ -88,8 +74,5 @@ body {
     }
     .col-lg-2 {
         width: 50%;
-    }
-    .col-lg-3 {
-        width: 100%;
     }
 }
