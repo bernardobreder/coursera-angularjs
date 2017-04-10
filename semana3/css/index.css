@@ -13,8 +13,13 @@ h1 {
 
 .navbar {
     background-color: #ddddff;
+    border-radius: 0px;
 }
 
 .menubar {
     font-weight: bold;
+}
+
+.menubar li:hover {
+    background-color: #aaaaff;
 }
