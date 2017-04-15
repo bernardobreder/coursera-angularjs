@@ -10,3 +10,16 @@ h1 {
 .back:hover {
     text-decoration: none;
 }
+
+.navbar {
+    background-color: #ddddff;
+    border-radius: 0px;
+}
+
+.menubar {
+    font-weight: bold;
+}
+
+.menubar li:hover {
+    background-color: #aaaaff;
+}
