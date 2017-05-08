@@ -5,3 +5,4 @@
         $scope.sayHello = () => 'Hello'
     })
 })()
+
