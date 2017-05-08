@@ -40,8 +40,8 @@ function ShoppingListCheckOffService(ToBuyService, AlreadyBoughtService) {
 ToBuyController.$inject = ['ToBuyService']
 function ToBuyController(ToBuyService) {
 
-    this.array = ToBuyService.buys
-    this.empty = function () { return ToBuyService.empty }
+    this.array = () => ToBuyService.buys
+    this.empty = () => ToBuyService.empty
 
     this.addItem = function (item) {
         ToBuyService.addItem(item)
@@ -79,9 +79,9 @@ function ToBuyService() {
 
 AlreadyBoughtController.$inject = ['AlreadyBoughtService']
 function AlreadyBoughtController(AlreadyBoughtService) {
-    
-    this.array = AlreadyBoughtService.bought
-    this.empty = function () { return AlreadyBoughtService.empty }
+
+    this.array = () => AlreadyBoughtService.bought
+    this.empty = () => AlreadyBoughtService.empty
 
     this.addItem = function (item) {
         AlreadyBoughtService.addItem(item)
