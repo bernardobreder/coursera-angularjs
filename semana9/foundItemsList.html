@@ -1,0 +1,10 @@
+<div ng-if="!ctrl.errorMsg" class="list-group">
+    <ul class="cv-ol">
+        <li ng-repeat="item in ctrl.found" class="list-group-item">
+            <h4 class="list-group-item-heading">{{ item.short_name }} - {{ item.name }}</h4>
+            <p class="list-group-item-text">{{ item.description }}</p>
+            <button class="btn btn-danger cv-item-button" ng-click="ctrl.onRemove({index: $index});">Don't want this one!</button>
+        </li>
+    </ul>
+</div>
+<div ng-if="ctrl.itemIsNotInList()" class="alert alert-danger cv-alert">Nothing found</div>
