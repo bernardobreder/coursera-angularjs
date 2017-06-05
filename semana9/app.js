@@ -46,7 +46,7 @@
                 .then(function (response) {
                     ctrl.found = response;
                 }).catch(function (error) {
-                    console.log("[AT CONTROLLER] error: ", error);
+                    console.log("[controller] error: ", error);
                 })
         };
 
@@ -83,7 +83,7 @@
                 }
                 return foundItems;
             }).catch(function (error) {
-                console.log("[AT SERVICE] erro: ", error);
+                console.log("[service] erro: ", error);
             });
         }
     }
